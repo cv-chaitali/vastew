@@ -13,7 +13,8 @@ from datasets import load_dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer, get_scheduler
 from tqdm.auto import tqdm
 import gc
-
+from huggingface_hub import login
+login('')
 
 def set_seeds(seed=42):
     random.seed(seed)
