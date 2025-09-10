@@ -13,7 +13,8 @@ from datasets import load_dataset, concatenate_datasets
 from transformers import EarlyStoppingCallback, TrainerCallback, AutoTokenizer, AutoModelForCausalLM
 
 from peft import LoraConfig, get_peft_model, PeftModel
-
+from huggingface_hub import login
+login('')
 # -----------------------
 # Repro & CUDA setup
 # -----------------------
